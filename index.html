@@ -785,68 +785,6 @@
         : '💡 超深海（1200m+）：極限水圧！耐圧効率Lv.9〜10と遺物バフが揃って初めて探索可能です。';
     }
 
-    // RELIC SETS DATA
-    const RELIC_SETS = [
-      {
-        id: 'lost-toys',
-        title: '亡くされた玩具',
-        desc: 'かつて子どもたちの笑顔を彩っていた無邪気な宝物たち。',
-        buff: '白い光（EXP）の獲得量 +35% ＆ 呼吸バー成長加速',
-        color: '#f59e0b',
-        relics: [
-          { name: 'ガラスのビー玉', depth: '150m (浅海)', rarity: 'Common', story: '太陽の光を閉じ込めたように輝いていたあの夏の日の記憶。' },
-          { name: 'ブリキのロボット', depth: '450m (中深海)', rarity: 'Rare', story: 'ゼンマイを巻くとカタカタと不器用に歩いた少年の友達。' },
-          { name: '水濡れしたぬいぐるみ', depth: '850m (深海遺跡)', rarity: 'Epic', story: '眠る時いつも抱きしめていた、世界で一番安心できる存在。' }
-        ]
-      },
-      {
-        id: 'kitchen-trace',
-        title: '台所の面影',
-        desc: '湯気と笑い声が満ちていた、家庭の温かな食卓の残り香。',
-        buff: '潜水中の基礎酸素消費速度が -15% 恒久減少',
-        color: '#10b981',
-        relics: [
-          { name: '陶器のマグカップ', depth: '180m (浅海)', rarity: 'Common', story: '寒い朝に両手で包み込んで飲んだ、母特製のホットミルク。' },
-          { name: '銀のスプーン', depth: '320m (中深海)', rarity: 'Common', story: '誕生日のケーキを一番最初に口へ運んだ時の輝き。' },
-          { name: '錆びたホーローケトル', depth: '750m (深海遺跡)', rarity: 'Rare', story: '夕暮れ時に台所から響いた、晩ご飯の合図。' },
-          { name: '手織りのコースター', depth: '900m (深海遺跡)', rarity: 'Rare', story: '家族みんなでお揃いで編んだ手作りの思い出。' }
-        ]
-      },
-      {
-        id: 'sole-companion',
-        title: '唯一の友達',
-        desc: '主人公の手元に残されていた文具と、かけがえのない記憶の断片。',
-        buff: 'レーダー探知範囲 +25% ＆ 未所持遺物への方向ガイド表示',
-        color: '#06b6d4',
-        relics: [
-          { name: '黒と金のボールペン', depth: '250m (中深海)', rarity: 'Rare', story: '日誌に毎日の潜水記録と夢を綴っていた大切な一本。' },
-          { name: '革表紙の手帳', depth: '780m (深海遺跡)', rarity: 'Epic', story: '「いつか青い海をもう一度見たい」と記された誓い。' }
-        ]
-      },
-      {
-        id: 'forgotten-years',
-        title: '忘れられた歳月',
-        desc: 'かつて時を刻み、人々を約束の場所へと導いた時計たち。',
-        buff: 'EMPクールタイム -20% ＆ 敵停止時間 +1.5秒延長',
-        color: '#8b5cf6',
-        relics: [
-          { name: '止まった腕時計', depth: '380m (中深海)', rarity: 'Rare', story: '針が「14時23分」で静止した防水腕時計。' },
-          { name: '真鍮の砂時計', depth: '620m (中深海)', rarity: 'Rare', story: '3分間だけ息を止めるゲームをして遊んだ幼い日の記憶。' },
-          { name: 'アンティーク目覚まし時計', depth: '880m (深海遺跡)', rarity: 'Epic', story: '毎朝鳴り響いて起こしてくれた、懐かしい目覚まし。' }
-        ]
-      },
-      {
-        id: 'the-memento',
-        title: '深海の約束（最愛の形見）',
-        desc: '主人公が深海へ潜り続ける真の目的。最深部に眠る究極の記憶。',
-        buff: '【真エンド到達】全ステータス限界突破 ＆ 深海全域の完全視界',
-        color: '#38bdf8',
-        relics: [
-          { name: '青い石のペンダント（形見）', depth: '1400m+ (最深部)', rarity: 'Legendary', story: '「どれほど世界が変わっても、この海の下でずっと待っている」――旅立ちの日の約束。' }
-        ]
-      }
-    ];
-
     let selectedFilter = 'all';
 
     function renderRelicTabs() {
